@@ -1,0 +1,10 @@
+PODS:
+  - LFSPGooglePlacesAutocomplete (1.0.4)
+
+DEPENDENCIES:
+  - LFSPGooglePlacesAutocomplete
+
+SPEC CHECKSUMS:
+  LFSPGooglePlacesAutocomplete: 072ae63665c6f27007cde82f47522bcc78e0e269
+
+COCOAPODS: 0.37.2

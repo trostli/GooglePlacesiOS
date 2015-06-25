@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PlacesDetailsViewController.h
 //  GooglePlaces
 //
 //  Created by Daniel Trostli on 6/24/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface PlacesDetailsViewController : UIViewController
 
+- (id)initWithPlaceId:(NSString *)placeId;
 
 @end
-

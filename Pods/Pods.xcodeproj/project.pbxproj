@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DF13381B6BA0CF77629F0AF /* SPGooglePlacesAutocompletePlace.h in Headers */ = {isa = PBXBuildFile; fileRef = 4754551FA9BFA4E855698D9C /* SPGooglePlacesAutocompletePlace.h */; };
+		189C56881174056BFE76AE20 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 479157A63E127F59EEBF44E4 /* Pods-dummy.m */; };
+		22F8542CE24EA7359781C5BB /* SPGooglePlacesAutocompleteUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCA9F28838CBAF4A4EE39AF /* SPGooglePlacesAutocompleteUtilities.h */; };
+		6228D8A4884DB1478BA6A1D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A271DE8EC49F7BC2BF9D4C6 /* Foundation.framework */; };
+		6AE794B56F12A791D02B6A99 /* SPGooglePlacesAutocompletePlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC62030C3EE501F75AC8EE1 /* SPGooglePlacesAutocompletePlace.m */; };
+		70879A9FF2E549DCBC135A0F /* SPGooglePlacesAutocompleteUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C262D0AF2931D6152E481124 /* SPGooglePlacesAutocompleteUtilities.m */; };
+		97BD50AB2FDD1C9559235838 /* SPGooglePlacesAutocomplete.h in Headers */ = {isa = PBXBuildFile; fileRef = AD88B69DBCCBD595776CE515 /* SPGooglePlacesAutocomplete.h */; };
+		A5899BE5706D3BC56A0C0FBB /* SPGooglePlacesAutocompleteQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = E81B9E739B42A5DB46B8EE4A /* SPGooglePlacesAutocompleteQuery.h */; };
+		A7CD06824BF58F29D0F16F15 /* SPGooglePlacesAutocompleteQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 893EE1900CB7436AD36E01A5 /* SPGooglePlacesAutocompleteQuery.m */; };
+		B62C6A4E4287EB6C972C0096 /* SPGooglePlacesPlaceDetailQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 7915BEF9C89DA1381381FEE3 /* SPGooglePlacesPlaceDetailQuery.h */; };
+		C35732BA83B60C0AB3A5543C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A271DE8EC49F7BC2BF9D4C6 /* Foundation.framework */; };
+		D68D6E6A357EEB1E5AC6EAA2 /* Pods-LFSPGooglePlacesAutocomplete-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27909223F464FE26D8516831 /* Pods-LFSPGooglePlacesAutocomplete-dummy.m */; };
+		FDE040BA85BDE254EC089323 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D680B80264EA19AC7AB29A /* CoreLocation.framework */; };
+		FEF3D92C48D3CCF549B266FE /* SPGooglePlacesPlaceDetailQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 652FFAA52E2778C2B8DD3B52 /* SPGooglePlacesPlaceDetailQuery.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6BEC7785EC5E2EC4989E322 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CC0E2C135DA9940B8A56029 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDDF22209790CDBB45AC2690;
+			remoteInfo = "Pods-LFSPGooglePlacesAutocomplete";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00DD2DFC45BD0996D5B385FF /* Pods-LFSPGooglePlacesAutocomplete-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFSPGooglePlacesAutocomplete-Private.xcconfig"; sourceTree = "<group>"; };
+		0336D63BC7D4EA563CC57259 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		1DB48455AC7BC459B6D85023 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		1FC62030C3EE501F75AC8EE1 /* SPGooglePlacesAutocompletePlace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGooglePlacesAutocompletePlace.m; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocompletePlace.m; sourceTree = "<group>"; };
+		27909223F464FE26D8516831 /* Pods-LFSPGooglePlacesAutocomplete-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LFSPGooglePlacesAutocomplete-dummy.m"; sourceTree = "<group>"; };
+		390B2615CBE89953FBD96500 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		3A271DE8EC49F7BC2BF9D4C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3CCA9F28838CBAF4A4EE39AF /* SPGooglePlacesAutocompleteUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGooglePlacesAutocompleteUtilities.h; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocompleteUtilities.h; sourceTree = "<group>"; };
+		4754551FA9BFA4E855698D9C /* SPGooglePlacesAutocompletePlace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGooglePlacesAutocompletePlace.h; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocompletePlace.h; sourceTree = "<group>"; };
+		479157A63E127F59EEBF44E4 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		56D680B80264EA19AC7AB29A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		5AE14913FBB887AEA782AC8B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB40F0A3C76C889F29FB630 /* Pods-LFSPGooglePlacesAutocomplete-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LFSPGooglePlacesAutocomplete-prefix.pch"; sourceTree = "<group>"; };
+		5E3BAC84AB493FD960103744 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		63DD4840C50229F4E4D14B89 /* Pods-LFSPGooglePlacesAutocomplete.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LFSPGooglePlacesAutocomplete.xcconfig"; sourceTree = "<group>"; };
+		652FFAA52E2778C2B8DD3B52 /* SPGooglePlacesPlaceDetailQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGooglePlacesPlaceDetailQuery.m; path = SPGooglePlacesAutocomplete/SPGooglePlacesPlaceDetailQuery.m; sourceTree = "<group>"; };
+		7915BEF9C89DA1381381FEE3 /* SPGooglePlacesPlaceDetailQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGooglePlacesPlaceDetailQuery.h; path = SPGooglePlacesAutocomplete/SPGooglePlacesPlaceDetailQuery.h; sourceTree = "<group>"; };
+		893EE1900CB7436AD36E01A5 /* SPGooglePlacesAutocompleteQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGooglePlacesAutocompleteQuery.m; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocompleteQuery.m; sourceTree = "<group>"; };
+		AD88B69DBCCBD595776CE515 /* SPGooglePlacesAutocomplete.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGooglePlacesAutocomplete.h; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocomplete.h; sourceTree = "<group>"; };
+		B597557634BE3E56C3BBA939 /* libPods-LFSPGooglePlacesAutocomplete.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LFSPGooglePlacesAutocomplete.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C262D0AF2931D6152E481124 /* SPGooglePlacesAutocompleteUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPGooglePlacesAutocompleteUtilities.m; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocompleteUtilities.m; sourceTree = "<group>"; };
+		C5172E4545C4102E8C3F4991 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		E2C9DB46CE9FC421B4C66017 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E81B9E739B42A5DB46B8EE4A /* SPGooglePlacesAutocompleteQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPGooglePlacesAutocompleteQuery.h; path = SPGooglePlacesAutocomplete/SPGooglePlacesAutocompleteQuery.h; sourceTree = "<group>"; };
+		FC8CCF814AB19930BB7AA04D /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		011D28A584EA1D2F42A21CBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6228D8A4884DB1478BA6A1D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13ED1701D540B5AEEA606042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE040BA85BDE254EC089323 /* CoreLocation.framework in Frameworks */,
+				C35732BA83B60C0AB3A5543C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41DF657E23D7AA557D28DD69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A94E0FC2A4F9155F2CD54E5 /* LFSPGooglePlacesAutocomplete */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A159A44B87DEE59824D2D5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2C9DB46CE9FC421B4C66017 /* Pods-acknowledgements.markdown */,
+				C5172E4545C4102E8C3F4991 /* Pods-acknowledgements.plist */,
+				479157A63E127F59EEBF44E4 /* Pods-dummy.m */,
+				390B2615CBE89953FBD96500 /* Pods-environment.h */,
+				FC8CCF814AB19930BB7AA04D /* Pods-resources.sh */,
+				0336D63BC7D4EA563CC57259 /* Pods.debug.xcconfig */,
+				1DB48455AC7BC459B6D85023 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		73A840714985547999F1DE88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AE14913FBB887AEA782AC8B /* libPods.a */,
+				B597557634BE3E56C3BBA939 /* libPods-LFSPGooglePlacesAutocomplete.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D6F86200E2F84576C88A994 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				56D680B80264EA19AC7AB29A /* CoreLocation.framework */,
+				3A271DE8EC49F7BC2BF9D4C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9711E5ABCA5F16CB615176F3 = {
+			isa = PBXGroup;
+			children = (
+				5E3BAC84AB493FD960103744 /* Podfile */,
+				AE6F299B4DEB916C35E2B50E /* Frameworks */,
+				41DF657E23D7AA557D28DD69 /* Pods */,
+				73A840714985547999F1DE88 /* Products */,
+				E1626F17EC58B4057FA45D3D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9A94E0FC2A4F9155F2CD54E5 /* LFSPGooglePlacesAutocomplete */ = {
+			isa = PBXGroup;
+			children = (
+				AD88B69DBCCBD595776CE515 /* SPGooglePlacesAutocomplete.h */,
+				4754551FA9BFA4E855698D9C /* SPGooglePlacesAutocompletePlace.h */,
+				1FC62030C3EE501F75AC8EE1 /* SPGooglePlacesAutocompletePlace.m */,
+				E81B9E739B42A5DB46B8EE4A /* SPGooglePlacesAutocompleteQuery.h */,
+				893EE1900CB7436AD36E01A5 /* SPGooglePlacesAutocompleteQuery.m */,
+				3CCA9F28838CBAF4A4EE39AF /* SPGooglePlacesAutocompleteUtilities.h */,
+				C262D0AF2931D6152E481124 /* SPGooglePlacesAutocompleteUtilities.m */,
+				7915BEF9C89DA1381381FEE3 /* SPGooglePlacesPlaceDetailQuery.h */,
+				652FFAA52E2778C2B8DD3B52 /* SPGooglePlacesPlaceDetailQuery.m */,
+				B0BCD351D06D07DAC8101ABF /* Support Files */,
+			);
+			path = LFSPGooglePlacesAutocomplete;
+			sourceTree = "<group>";
+		};
+		AE6F299B4DEB916C35E2B50E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D6F86200E2F84576C88A994 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0BCD351D06D07DAC8101ABF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				63DD4840C50229F4E4D14B89 /* Pods-LFSPGooglePlacesAutocomplete.xcconfig */,
+				00DD2DFC45BD0996D5B385FF /* Pods-LFSPGooglePlacesAutocomplete-Private.xcconfig */,
+				27909223F464FE26D8516831 /* Pods-LFSPGooglePlacesAutocomplete-dummy.m */,
+				5CB40F0A3C76C889F29FB630 /* Pods-LFSPGooglePlacesAutocomplete-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-LFSPGooglePlacesAutocomplete";
+			sourceTree = "<group>";
+		};
+		E1626F17EC58B4057FA45D3D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A159A44B87DEE59824D2D5E /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1925C719E465B92AFFD136B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97BD50AB2FDD1C9559235838 /* SPGooglePlacesAutocomplete.h in Headers */,
+				0DF13381B6BA0CF77629F0AF /* SPGooglePlacesAutocompletePlace.h in Headers */,
+				A5899BE5706D3BC56A0C0FBB /* SPGooglePlacesAutocompleteQuery.h in Headers */,
+				22F8542CE24EA7359781C5BB /* SPGooglePlacesAutocompleteUtilities.h in Headers */,
+				B62C6A4E4287EB6C972C0096 /* SPGooglePlacesPlaceDetailQuery.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		11F1E33998EDA7774A9F548D /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0CBD885B94DBB6115C930CE /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				D9C2E130F5A7986EDC3B52C4 /* Sources */,
+				011D28A584EA1D2F42A21CBD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CA179DE6AB0605E20B4BBF1 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 5AE14913FBB887AEA782AC8B /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DDDF22209790CDBB45AC2690 /* Pods-LFSPGooglePlacesAutocomplete */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46A487AB5C41F7474BEB2CE0 /* Build configuration list for PBXNativeTarget "Pods-LFSPGooglePlacesAutocomplete" */;
+			buildPhases = (
+				4D0CE2EA26F4F8A7738240C4 /* Sources */,
+				13ED1701D540B5AEEA606042 /* Frameworks */,
+				1925C719E465B92AFFD136B1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LFSPGooglePlacesAutocomplete";
+			productName = "Pods-LFSPGooglePlacesAutocomplete";
+			productReference = B597557634BE3E56C3BBA939 /* libPods-LFSPGooglePlacesAutocomplete.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CC0E2C135DA9940B8A56029 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 3AF24D926AEDDF856CAEB5DC /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9711E5ABCA5F16CB615176F3;
+			productRefGroup = 73A840714985547999F1DE88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11F1E33998EDA7774A9F548D /* Pods */,
+				DDDF22209790CDBB45AC2690 /* Pods-LFSPGooglePlacesAutocomplete */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D0CE2EA26F4F8A7738240C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68D6E6A357EEB1E5AC6EAA2 /* Pods-LFSPGooglePlacesAutocomplete-dummy.m in Sources */,
+				6AE794B56F12A791D02B6A99 /* SPGooglePlacesAutocompletePlace.m in Sources */,
+				A7CD06824BF58F29D0F16F15 /* SPGooglePlacesAutocompleteQuery.m in Sources */,
+				70879A9FF2E549DCBC135A0F /* SPGooglePlacesAutocompleteUtilities.m in Sources */,
+				FEF3D92C48D3CCF549B266FE /* SPGooglePlacesPlaceDetailQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C2E130F5A7986EDC3B52C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189C56881174056BFE76AE20 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CA179DE6AB0605E20B4BBF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LFSPGooglePlacesAutocomplete";
+			target = DDDF22209790CDBB45AC2690 /* Pods-LFSPGooglePlacesAutocomplete */;
+			targetProxy = F6BEC7785EC5E2EC4989E322 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1383A023660EB2E86B030953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1821735272ED793C2B2FABB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0336D63BC7D4EA563CC57259 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7D798A9A7BBDA815F668ED52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DD2DFC45BD0996D5B385FF /* Pods-LFSPGooglePlacesAutocomplete-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LFSPGooglePlacesAutocomplete/Pods-LFSPGooglePlacesAutocomplete-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B7D3762148C3D16EDA4AF71F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB48455AC7BC459B6D85023 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B82A5D9AA1612E48DC687C50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DD2DFC45BD0996D5B385FF /* Pods-LFSPGooglePlacesAutocomplete-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-LFSPGooglePlacesAutocomplete/Pods-LFSPGooglePlacesAutocomplete-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C2CF66D3C42826BE25697012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AF24D926AEDDF856CAEB5DC /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1383A023660EB2E86B030953 /* Debug */,
+				C2CF66D3C42826BE25697012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46A487AB5C41F7474BEB2CE0 /* Build configuration list for PBXNativeTarget "Pods-LFSPGooglePlacesAutocomplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B82A5D9AA1612E48DC687C50 /* Debug */,
+				7D798A9A7BBDA815F668ED52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0CBD885B94DBB6115C930CE /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1821735272ED793C2B2FABB9 /* Debug */,
+				B7D3762148C3D16EDA4AF71F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CC0E2C135DA9940B8A56029 /* Project object */;
+}

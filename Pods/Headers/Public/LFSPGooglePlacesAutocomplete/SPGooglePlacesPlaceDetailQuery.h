@@ -1,0 +1,1 @@
+../../../LFSPGooglePlacesAutocomplete/SPGooglePlacesAutocomplete/SPGooglePlacesPlaceDetailQuery.h
