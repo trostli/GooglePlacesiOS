@@ -13,10 +13,6 @@
 #import "INTULocationManager.h"
 #import "SVProgressHUD.h"
 
-//#import "DetailViewController.h"
-//#import "PresentDetailTransition.h"
-//#import "DismissDetailTransition.h"
-
 @interface PlacesViewController () <UIViewControllerTransitioningDelegate, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
 {
     SPGooglePlacesAutocompleteQuery *_query;

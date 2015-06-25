@@ -71,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		370972BE1B3CBD69001094AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37797FF91B3C7A1E0006156E /* PlaceTableViewCell.h */,
+				37797FFA1B3C7A1E0006156E /* PlaceTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		37E381111B3B395A00983A6F = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +110,7 @@
 				37E3812A1B3B395A00983A6F /* Images.xcassets */,
 				37E3812C1B3B395A00983A6F /* LaunchScreen.xib */,
 				37E3811D1B3B395A00983A6F /* Supporting Files */,
-				37797FF91B3C7A1E0006156E /* PlaceTableViewCell.h */,
-				37797FFA1B3C7A1E0006156E /* PlaceTableViewCell.m */,
+				370972BE1B3CBD69001094AE /* Views */,
 			);
 			path = GooglePlaces;
 			sourceTree = "<group>";
