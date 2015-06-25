@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
+#import "SPGooglePlacesAutocomplete.h"
 
-@interface PlacesDetailsViewController : UIViewController
-
-- (id)initWithPlaceId:(NSString *)placeId;
-
+@interface PlacesDetailsViewController : UIViewController <MKMapViewDelegate>
+@property (nonatomic, strong) SPGooglePlacesAutocompletePlace *place;
 @end

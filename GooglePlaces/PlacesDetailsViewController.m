@@ -7,12 +7,15 @@
 //
 
 #import "PlacesDetailsViewController.h"
-#import <MapKit/MapKit.h>
+#import "SPGooglePlacesPlaceDetailQuery.h"
+#import "SVProgressHUD.h"
 
 @interface PlacesDetailsViewController ()
 {
-    NSString *_placeID;
-    CLLocationCoordinate2D _location;
+    SPGooglePlacesPlaceDetailQuery *_detailQuery;
+    CLPlacemark *_placemark;
+    NSString *_addressString;
+    MKPointAnnotation *_selectedPlaceAnnotation;
 }
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UILabel *addressLabel;
@@ -21,25 +24,41 @@
 
 @implementation PlacesDetailsViewController
 
-- (id)initWithPlaceId:(NSString *)placeId
-{
-    self = [super init];
-    if (self) {
-        _placeID = placeId;
-    }
-    
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     self.navigationItem.title = @"Details";
+    [SVProgressHUD show];
+    [self.place resolveToPlacemark:^(CLPlacemark *placemark, NSString *addressString, NSError *error) {
+        if (error) {
+            NSLog(@"ERROR");
+        } else {
+            _addressString = addressString;
+            [self updateAddress:addressString];
+            _placemark = placemark;
+            [self showPlaceOnMap:placemark];
+            [SVProgressHUD dismiss];
+        }
+    }];
     
-//    placeDetailsRequest.key = @"AIzaSyAGsKvwzGeKhOfo8nUCUGwndjyoPhMLZfE";
-//    placeDetailsRequest.placeId = _placeID;
-    
+}
+
+- (IBAction)directionsButtonPushed:(id)sender {
+    [self openAddressinMaps:_placemark];
+}
+
+
+- (void)openAddressinMaps:(CLPlacemark *)placemark
+{
+    Class mapItemClass = [MKMapItem class];
+    if (mapItemClass && [mapItemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)])
+    {
+        MKPlacemark *mkPlacemark = [[MKPlacemark alloc] initWithCoordinate:placemark.location.coordinate addressDictionary:nil];
+        MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:mkPlacemark];
+        [mapItem setName:self.addressLabel.text];
+        [mapItem openInMapsWithLaunchOptions:nil];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,65 +66,46 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)showPlaceOnMap
+- (void)showPlaceOnMap:(CLPlacemark*)placemark
 {
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(_location, 500, 500);
+    [self addPlacemarkAnnotationToMap:placemark addressString:_addressString];
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(placemark.location.coordinate, 500, 500);
     [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
 }
 
-- (void)updateAddress {
-//    self.addressLabel.text = _placeDetailsResult.formattedAddress;
+- (void)updateAddress:(NSString *)addressString {
+    self.addressLabel.text = addressString;
 }
 
+- (void)addPlacemarkAnnotationToMap:(CLPlacemark *)placemark addressString:(NSString *)address {
+    [self.mapView removeAnnotation:_selectedPlaceAnnotation];
+    
+    _selectedPlaceAnnotation = [[MKPointAnnotation alloc] init];
+    _selectedPlaceAnnotation.coordinate = placemark.location.coordinate;
+    _selectedPlaceAnnotation.title = address;
+    [self.mapView addAnnotation:_selectedPlaceAnnotation];
+}
 
-//- (void)placesManager:(HIPlacesManager *)placesManager searchForPlaceDetailsResultDidFailWithError:(NSError *)error
-//{
-//    NSString *alertViewTitle;
-//    switch (error.code) {
-//        case HIPlacesErrorZeroResults:
-//            alertViewTitle = @"No results found!";
-//            break;
-//            
-//        case HIPlacesErrorOverQueryLimit:
-//            alertViewTitle = @"Over query limit!";
-//            break;
-//            
-//        case HIPlacesErrorRequestDenied:
-//            alertViewTitle = @"Request denied!";
-//            break;
-//            
-//        case HIPlacesErrorInvalidRequest:
-//            alertViewTitle = @"Invalid request!";
-//            break;
-//            
-//        case HIPlacesErrorNotFound:
-//            alertViewTitle = @"Not found!";
-//            break;
-//            
-//        case HIPlacesErrorUnkownError:
-//            alertViewTitle = @"Unknown error!";
-//            break;
-//            
-//        case HIPlacesErrorInvalidJSON:
-//            alertViewTitle = @"Invalid JSON!";
-//            break;
-//            
-//        case HIPlacesErrorConnectionFailed:
-//            alertViewTitle = @"Connection failed!";
-//            break;
-//            
-//        default:
-//            break;
-//    }
-//    
-//    UIAlertView *alertView = [[UIAlertView alloc]
-//                              initWithTitle:alertViewTitle
-//                              message:nil
-//                              delegate:nil
-//                              cancelButtonTitle:@"OK"
-//                              otherButtonTitles:nil];
-//    [alertView show];
-//}
+#pragma mark MKMapView Delegate
 
+- (MKAnnotationView *)mapView:(MKMapView *)mapViewIn viewForAnnotation:(id <MKAnnotation>)annotation {
+    if (mapViewIn != self.mapView || [annotation isKindOfClass:[MKUserLocation class]]) {
+        return nil;
+    }
+    static NSString *annotationIdentifier = @"SPGooglePlacesAutocompleteAnnotation";
+    MKPinAnnotationView *annotationView = (MKPinAnnotationView *)[self.mapView dequeueReusableAnnotationViewWithIdentifier:annotationIdentifier];
+    if (!annotationView) {
+        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationIdentifier];
+    }
+    annotationView.animatesDrop = YES;
+    annotationView.canShowCallout = YES;
+        
+    return annotationView;
+}
+
+- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views {
+    // Whenever we've dropped a pin on the map, immediately select it to present its callout bubble.
+    [self.mapView selectAnnotation:_selectedPlaceAnnotation animated:YES];
+}
 
 @end

@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-INTULocationManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LFSPGooglePlacesAutocomplete.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>11F1E33998EDA7774A9F548D</key>
+		<key>27889A017F1B990E65946F81</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DDDF22209790CDBB45AC2690</key>
+		<key>4B0ACCF619B7D0ECBF450F69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9345319FA9A6E3D763B6A818</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF8CD9AF79B255983264EEB7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
