@@ -43,33 +43,38 @@
 
 - (IBAction)hitLocationSwitch:(id)sender {
     if (self.useLocationSwitch.on) {
-        [SVProgressHUD show];
-        
-        INTULocationManager *locMgr = [INTULocationManager sharedInstance];
-        [locMgr requestLocationWithDesiredAccuracy:INTULocationAccuracyBlock timeout:10.0 delayUntilAuthorized:YES block:^(CLLocation *currentLocation, INTULocationAccuracy achievedAccuracy, INTULocationStatus status) {
-            if (status == INTULocationStatusSuccess) {
-                _userLocation = currentLocation;
-            }
-            else if (status == INTULocationStatusTimedOut) {
-                [self showAlert:@"Location status timed out"];
-                self.useLocationSwitch.on = NO;
-            } else if (status == INTULocationStatusServicesDisabled) {
-                [self showAlert:@"Please enable Location Services"];
-                self.useLocationSwitch.on = NO;
-            } else if (status == INTULocationStatusServicesDenied) {
-                [self showAlert:@"Please allow mySpaces to use your location in Privacy Settings"];
-                self.useLocationSwitch.on = NO;
-            } else if (status == INTULocationStatusServicesRestricted) {
-                [self showAlert:@"You do not have permission to enable location services"];
-                self.useLocationSwitch.on = NO;
-            }
-            else {
-                [self showAlert:@"An unknown error occured when trying to determine your location"];
-                self.useLocationSwitch.on = NO;
-            }
-            [SVProgressHUD dismiss];
-        }];
+        [self getUserLocationn];
     }
+}
+
+- (void)getUserLocationn {
+    [SVProgressHUD show];
+    
+    INTULocationManager *locMgr = [INTULocationManager sharedInstance];
+    [locMgr requestLocationWithDesiredAccuracy:INTULocationAccuracyBlock timeout:10.0 delayUntilAuthorized:YES block:^(CLLocation *currentLocation, INTULocationAccuracy achievedAccuracy, INTULocationStatus status) {
+        if (status == INTULocationStatusSuccess) {
+            _userLocation = currentLocation;
+        }
+        else if (status == INTULocationStatusTimedOut) {
+            [self showAlert:@"Location status timed out"];
+            self.useLocationSwitch.on = NO;
+        } else if (status == INTULocationStatusServicesDisabled) {
+            [self showAlert:@"Please enable Location Services"];
+            self.useLocationSwitch.on = NO;
+        } else if (status == INTULocationStatusServicesDenied) {
+            [self showAlert:@"Please allow mySpaces to use your location in Privacy Settings"];
+            self.useLocationSwitch.on = NO;
+        } else if (status == INTULocationStatusServicesRestricted) {
+            [self showAlert:@"You do not have permission to enable location services"];
+            self.useLocationSwitch.on = NO;
+        }
+        else {
+            [self showAlert:@"An unknown error occured when trying to determine your location"];
+            self.useLocationSwitch.on = NO;
+        }
+        [SVProgressHUD dismiss];
+    }];
+
 }
 
 - (void) showAlert:(NSString *)errorMessage {
